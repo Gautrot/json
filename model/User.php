@@ -63,7 +63,9 @@ class User {
   }
 
   public function setDateNaissance($dateNaissance) {
-    $this->$dateNaissance = $dateNaissance;
+    if (is_string($dateNaissance)) {
+      $this->$dateNaissance = $dateNaissance;
+    }
   }
 
   public function setDepartement($departement) {

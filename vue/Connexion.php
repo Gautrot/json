@@ -1,6 +1,3 @@
-<?php
-?>
-
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
   <head>
@@ -12,13 +9,10 @@
     if (isset($_SESSION['erreur'])) {
       echo '<div>'.$_SESSION['erreur'].'</div>';
     }
-    if (isset($_SESSION['succes'])) {
-      echo '<div>'.$_SESSION['succes'].'</div>';
-    }
     ?>
+    <h1>Se connecter</h1>
+    <hr>
     <form method="post" action="../traitement/Connexion.php">
-      <h1>Se connecter</h1>
-      <hr>
       <div>
         <input type="email" name="email" placeholder="E-mail" required autofocus>
       </div>
@@ -27,8 +21,5 @@
       </div>
       <button type="submit">Se connecter</button>
     </form>
-    <div>
-      <a href="Inscription.php">Vous êtes nouveau ? Inscrivez-vous !</a>
-    </div>
   </body>
 </html>

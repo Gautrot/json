@@ -2,7 +2,7 @@
 require_once '../model/User.php';
 require_once '../manager/Manager.php';
 
-$a = new Utilisateur([
+$a = new User([
   'email' => $_POST['email']
 ]);
 $b = new Manager();

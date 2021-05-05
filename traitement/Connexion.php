@@ -3,7 +3,7 @@ require_once '../model/User.php';
 require_once '../manager/Manager.php';
 
 try {
-  $user = new Utilisateur([
+  $user = new User([
     'email' => $_POST['email'],
     'mdp' => $_POST['mdp']
   ]);
