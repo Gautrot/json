@@ -2,9 +2,10 @@
 <html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>accueil</title>
   </head>
   <body>
+    <h1>Que voulez vous faire?</h1>
   <form action="vue/Connexion.php">
     <button type="submit">Se connecter</button>
   </form>
