@@ -1,13 +1,10 @@
-<?php
-?>
-
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Inscription</title>
-    <link href="../js/select2-4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-    <script src="../js/select2-4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
   </head>
   <body>
     <h1>Inscrivez-vous !</h1>
@@ -34,7 +31,9 @@
         <input type="password" name="mdp" placeholder="Mot de passe" required>
       </div>
       <div>
-        <select class="js-example-responsive" style="width: 50%"></select>
+        <label for="id_label_single">
+          <select class="js-example-responsive" style="width: 12.5%"></select>
+        </label>
       </div>
       <div>
         <input type="submit" value="S'inscrire" />
@@ -42,4 +41,9 @@
     </form>
     <div>
   </body>
+  <script>
+$(".js-example-responsive").select2({
+  width: 'resolve' // need to override the changed default
+});
+  </script>
 </html>
